@@ -577,12 +577,159 @@
           <div class="col-lg-10 mx-auto">
             <h2 class="mb-3">Xiaomi Image Comparisons</h2>
 
+            <style>
+              .image-container {
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 5px;
+                max-width: 1300px;
+                margin: 1px auto;      /* 缩小整个图片区域的上下间距 */
+                padding: 0;            /* 移除容器内边距 */
+                margin-top: 0;
+                margin-bottom: 0;
+              }
+
+              .image-item {
+                flex: 1;
+                min-width: 0;
+                text-align: center;
+              }
+
+              .image-item img {
+                width: 200%;
+                height: auto;
+                display: block;
+                /* border-radius: 6px; */
+              }
+
+              .image-item figcaption {
+                margin-top: 8px;
+                font-size: 14px;
+                color: #555;
+                line-height: 1.5;
+              }
+
+              /* 手机屏幕下改为纵向排列 */
+              @media (max-width: 600px) {
+                .image-container {
+                  flex-direction: column;
+                }
+
+                .image-item {
+                  width: 100%;
+                }
+              }
+            </style>
+
             <!-- 0.6 Inputs -->
             <p class="text-muted small mb-3">
               Compare ZoomFI with RIFE, AMT and VFIMAMBA in Xiaomi dataset, x0.6→x1.0
             </p>
 
-            <div
+            <div class="image-container">
+
+              <figure class="image-item">
+                <img src="assets/images1/xiaomi06_13_00002_zoomgs.png" alt="输入图像">
+                <!-- <figcaption>ZoomFI‡</figcaption> -->
+              </figure>
+
+              <figure class="image-item">
+                <img src="assets/images1/xiaomi06_13_00002_rife.png" alt="输出图像">
+                <!-- <figcaption>RIFE‡</figcaption> -->
+              </figure>
+
+              <figure class="image-item">
+                <img src="assets/images1/xiaomi06_13_00002_amt.png" alt="输出图像">
+                <!-- <figcaption>AMT‡</figcaption> -->
+              </figure>
+
+              <figure class="image-item">
+                <img src="assets/images1/xiaomi06_13_00002_mamba.png" alt="输出图像">
+                <!-- <figcaption>VFIMAMBA‡</figcaption> -->
+              </figure>
+
+              <figure class="image-item">
+                <img src="assets/images1/xiaomi06_13_00002_UW.png" alt="输出图像">
+                <!-- <figcaption>UW</figcaption> -->
+              </figure>
+
+              <figure class="image-item">
+                <img src="assets/images1/xiaomi06_13_00002_W.png" alt="输出图像">
+                <!-- <figcaption>W</figcaption> -->
+              </figure>
+
+            </div>
+
+            <div class="image-container">
+
+              <figure class="image-item">
+                <img src="assets/images1/xiaomi06_19_00002_zoomgs.png" alt="输入图像">
+                <!-- <figcaption>ZoomFI‡</figcaption> -->
+              </figure>
+
+              <figure class="image-item">
+                <img src="assets/images1/xiaomi06_19_00002_rife.png" alt="输出图像">
+                <!-- <figcaption>RIFE‡</figcaption> -->
+              </figure>
+
+              <figure class="image-item">
+                <img src="assets/images1/xiaomi06_19_00002_amt.png" alt="输出图像">
+                <!-- <figcaption>AMT‡</figcaption> -->
+              </figure>
+
+              <figure class="image-item">
+                <img src="assets/images1/xiaomi06_19_00002_mamba.png" alt="输出图像">
+                <!-- <figcaption>VFIMAMBA‡</figcaption> -->
+              </figure>
+
+              <figure class="image-item">
+                <img src="assets/images1/xiaomi06_19_00002_UW.png" alt="输出图像">
+                <!-- <figcaption>UW</figcaption> -->
+              </figure>
+
+              <figure class="image-item">
+                <img src="assets/images1/xiaomi06_19_00002_W.png" alt="输出图像">
+                <!-- <figcaption>W</figcaption> -->
+              </figure>
+
+            </div>
+
+            <div class="image-container">
+
+              <figure class="image-item">
+                <img src="assets/images1/xiaomi06_52_00002_zoomgs.png" alt="输入图像">
+                <figcaption>ZoomFI‡</figcaption>
+              </figure>
+
+              <figure class="image-item">
+                <img src="assets/images1/xiaomi06_52_00002_rife.png" alt="输出图像">
+                <figcaption>RIFE‡</figcaption>
+              </figure>
+
+              <figure class="image-item">
+                <img src="assets/images1/xiaomi06_52_00002_amt.png" alt="输出图像">
+                <figcaption>AMT‡</figcaption>
+              </figure>
+
+              <figure class="image-item">
+                <img src="assets/images1/xiaomi06_52_00002_mamba.png" alt="输出图像">
+                <figcaption>VFIMAMBA‡</figcaption>
+              </figure>
+
+              <figure class="image-item">
+                <img src="assets/images1/xiaomi06_52_00002_UW.png" alt="输出图像">
+                <figcaption>UW</figcaption>
+              </figure>
+
+              <figure class="image-item">
+                <img src="assets/images1/xiaomi06_52_00002_W.png" alt="输出图像">
+                <figcaption>W</figcaption>
+              </figure>
+
+            </div>
+
+            <!-- <div
               data-image-comparator="row"
               data-config='{
                 "images": [
@@ -625,14 +772,116 @@
                 ],
                 "showHoverHint": false
               }'
-            ></div>
+            ></div> -->
 
             <!-- 0.85 Inputs -->
             <p class="text-muted small mb-3">
               Compare ZoomFI with RIFE, AMT and VFIMAMBA in Xiaomi dataset, x0.85→x1.0
             </p>
 
-            <div
+            <div class="image-container">
+
+              <figure class="image-item">
+                <img src="assets/images1/xiaomi85_0202_zoomgs.png" alt="输入图像">
+                <!-- <figcaption>ZoomFI‡</figcaption> -->
+              </figure>
+
+              <figure class="image-item">
+                <img src="assets/images1/xiaomi85_0202_rife.png" alt="输出图像">
+                <!-- <figcaption>RIFE‡</figcaption> -->
+              </figure>
+
+              <figure class="image-item">
+                <img src="assets/images1/xiaomi85_0202_amt.png" alt="输出图像">
+                <!-- <figcaption>AMT‡</figcaption> -->
+              </figure>
+
+              <figure class="image-item">
+                <img src="assets/images1/xiaomi85_0202_mamba.png" alt="输出图像">
+                <!-- <figcaption>VFIMAMBA‡</figcaption> -->
+              </figure>
+
+              <figure class="image-item">
+                <img src="assets/images1/xiaomi85_0202_UW.png" alt="输出图像">
+                <!-- <figcaption>UW</figcaption> -->
+              </figure>
+
+              <figure class="image-item">
+                <img src="assets/images1/xiaomi85_0202_W.png" alt="输出图像">
+                <!-- <figcaption>W</figcaption> -->
+              </figure>
+
+            </div>
+
+            <div class="image-container">
+
+              <figure class="image-item">
+                <img src="assets/images1/xiaomi85_49_00002_zoomgs.png" alt="输入图像">
+                <!-- <figcaption>ZoomFI‡</figcaption> -->
+              </figure>
+
+              <figure class="image-item">
+                <img src="assets/images1/xiaomi85_49_00002_rife.png" alt="输出图像">
+                <!-- <figcaption>RIFE‡</figcaption> -->
+              </figure>
+
+              <figure class="image-item">
+                <img src="assets/images1/xiaomi85_49_00002_amt.png" alt="输出图像">
+                <!-- <figcaption>AMT‡</figcaption> -->
+              </figure>
+
+              <figure class="image-item">
+                <img src="assets/images1/xiaomi85_49_00002_mamba.png" alt="输出图像">
+                <!-- <figcaption>VFIMAMBA‡</figcaption> -->
+              </figure>
+
+              <figure class="image-item">
+                <img src="assets/images1/xiaomi85_49_00002_UW.png" alt="输出图像">
+                <!-- <figcaption>UW</figcaption> -->
+              </figure>
+
+              <figure class="image-item">
+                <img src="assets/images1/xiaomi85_49_00002_W.png" alt="输出图像">
+                <!-- <figcaption>W</figcaption> -->
+              </figure>
+
+            </div>
+
+            <div class="image-container">
+
+              <figure class="image-item">
+                <img src="assets/images1/xiaomi85_0211_zoomgs.png" alt="输入图像">
+                <figcaption>ZoomFI‡</figcaption>
+              </figure>
+
+              <figure class="image-item">
+                <img src="assets/images1/xiaomi85_0211_rife.png" alt="输出图像">
+                <figcaption>RIFE‡</figcaption>
+              </figure>
+
+              <figure class="image-item">
+                <img src="assets/images1/xiaomi85_0211_amt.png" alt="输出图像">
+                <figcaption>AMT‡</figcaption>
+              </figure>
+
+              <figure class="image-item">
+                <img src="assets/images1/xiaomi85_0211_mamba.png" alt="输出图像">
+                <figcaption>VFIMAMBA‡</figcaption>
+              </figure>
+
+              <figure class="image-item">
+                <img src="assets/images1/xiaomi85_0211_UW.png" alt="输出图像">
+                <figcaption>UW</figcaption>
+              </figure>
+
+              <figure class="image-item">
+                <img src="assets/images1/xiaomi85_0211_W.png" alt="输出图像">
+                <figcaption>W</figcaption>
+              </figure>
+
+            </div>
+
+            <!-- <div
               data-image-comparator="row"
               data-config='{
                 "images": [
@@ -645,9 +894,9 @@
                 ],
                 "showHoverHint": false
               }'
-            ></div>
+            ></div> -->
 
-            <div
+            <!-- <div
               data-image-comparator="row"
               data-config='{
                 "images": [
@@ -660,9 +909,9 @@
                 ],
                 "showHoverHint": false
               }'
-            ></div>
+            ></div> -->
 
-            <div
+            <!-- <div
               data-image-comparator="row"
               data-config='{
                 "images": [
@@ -675,7 +924,7 @@
                 ],
                 "showHoverHint": false
               }'
-            ></div>
+            ></div> -->
 
           </div>
         </div>
@@ -692,7 +941,109 @@
               Compare ZoomFI with RIFE, AMT and VFIMAMBA in Huawei dataset, x0.6→x1.0
             </p>
 
-            <div
+            <div class="image-container">
+
+              <figure class="image-item">
+                <img src="assets/images1/huawei06_039_zoomgs.png" alt="输入图像">
+                <!-- <figcaption>ZoomFI‡</figcaption> -->
+              </figure>
+
+              <figure class="image-item">
+                <img src="assets/images1/huawei06_039_rife.png" alt="输出图像">
+                <!-- <figcaption>RIFE‡</figcaption> -->
+              </figure>
+
+              <figure class="image-item">
+                <img src="assets/images1/huawei06_039_amt.png" alt="输出图像">
+                <!-- <figcaption>AMT‡</figcaption> -->
+              </figure>
+
+              <figure class="image-item">
+                <img src="assets/images1/huawei06_039_mamba.png" alt="输出图像">
+                <!-- <figcaption>VFIMAMBA‡</figcaption> -->
+              </figure>
+
+              <figure class="image-item">
+                <img src="assets/images1/huawei06_039_UW.png" alt="输出图像">
+                <!-- <figcaption>UW</figcaption> -->
+              </figure>
+
+              <figure class="image-item">
+                <img src="assets/images1/huawei06_039_W.png" alt="输出图像">
+                <!-- <figcaption>W</figcaption> -->
+              </figure>
+
+            </div>
+
+            <div class="image-container">
+
+              <figure class="image-item">
+                <img src="assets/images1/huawei06_044_zoomgs.png" alt="输入图像">
+                <!-- <figcaption>ZoomFI‡</figcaption> -->
+              </figure>
+
+              <figure class="image-item">
+                <img src="assets/images1/huawei06_044_rife.png" alt="输出图像">
+                <!-- <figcaption>RIFE‡</figcaption> -->
+              </figure>
+
+              <figure class="image-item">
+                <img src="assets/images1/huawei06_044_amt.png" alt="输出图像">
+                <!-- <figcaption>AMT‡</figcaption> -->
+              </figure>
+
+              <figure class="image-item">
+                <img src="assets/images1/huawei06_044_mamba.png" alt="输出图像">
+                <!-- <figcaption>VFIMAMBA‡</figcaption> -->
+              </figure>
+
+              <figure class="image-item">
+                <img src="assets/images1/huawei06_044_UW.png" alt="输出图像">
+                <!-- <figcaption>UW</figcaption> -->
+              </figure>
+
+              <figure class="image-item">
+                <img src="assets/images1/huawei06_044_W.png" alt="输出图像">
+                <!-- <figcaption>W</figcaption> -->
+              </figure>
+
+            </div>
+
+            <div class="image-container">
+
+              <figure class="image-item">
+                <img src="assets/images1/huawei06_035_zoomgs.png" alt="输入图像">
+                <figcaption>ZoomFI‡</figcaption>
+              </figure>
+
+              <figure class="image-item">
+                <img src="assets/images1/huawei06_035_rife.png" alt="输出图像">
+                <figcaption>RIFE‡</figcaption>
+              </figure>
+
+              <figure class="image-item">
+                <img src="assets/images1/huawei06_035_amt.png" alt="输出图像">
+                <figcaption>AMT‡</figcaption>
+              </figure>
+
+              <figure class="image-item">
+                <img src="assets/images1/huawei06_035_mamba.png" alt="输出图像">
+                <figcaption>VFIMAMBA‡</figcaption>
+              </figure>
+
+              <figure class="image-item">
+                <img src="assets/images1/huawei06_035_UW.png" alt="输出图像">
+                <figcaption>UW</figcaption>
+              </figure>
+
+              <figure class="image-item">
+                <img src="assets/images1/huawei06_035_W.png" alt="输出图像">
+                <figcaption>W</figcaption>
+              </figure>
+
+            </div>
+
+            <!-- <div
               data-image-comparator="row"
               data-config='{
                 "images": [
@@ -705,9 +1056,9 @@
                 ],
                 "showHoverHint": false
               }'
-            ></div>
+            ></div> -->
 
-            <div
+            <!-- <div
               data-image-comparator="row"
               data-config='{
                 "images": [
@@ -720,9 +1071,9 @@
                 ],
                 "showHoverHint": false
               }'
-            ></div>
+            ></div> -->
 
-            <div
+            <!-- <div
               data-image-comparator="row"
               data-config='{
                 "images": [
@@ -735,14 +1086,116 @@
                 ],
                 "showHoverHint": false
               }'
-            ></div>
+            ></div> -->
 
             <!-- 0.85 Inputs -->
             <p class="text-muted small mb-3">
               Compare ZoomFI with RIFE, AMT and VFIMAMBA in Huawei dataset, x0.85→x1.0
             </p>
 
-            <div
+            <div class="image-container">
+
+              <figure class="image-item">
+                <img src="assets/images1/huawei85_046_zoomgs.png" alt="输入图像">
+                <!-- <figcaption>ZoomFI‡</figcaption> -->
+              </figure>
+
+              <figure class="image-item">
+                <img src="assets/images1/huawei85_046_rife.png" alt="输出图像">
+                <!-- <figcaption>RIFE‡</figcaption> -->
+              </figure>
+
+              <figure class="image-item">
+                <img src="assets/images1/huawei85_046_amt.png" alt="输出图像">
+                <!-- <figcaption>AMT‡</figcaption> -->
+              </figure>
+
+              <figure class="image-item">
+                <img src="assets/images1/huawei85_046_mamba.png" alt="输出图像">
+                <!-- <figcaption>VFIMAMBA‡</figcaption> -->
+              </figure>
+
+              <figure class="image-item">
+                <img src="assets/images1/huawei85_046_UW.png" alt="输出图像">
+                <!-- <figcaption>UW</figcaption> -->
+              </figure>
+
+              <figure class="image-item">
+                <img src="assets/images1/huawei85_046_W.png" alt="输出图像">
+                <!-- <figcaption>W</figcaption> -->
+              </figure>
+
+            </div>
+
+            <div class="image-container">
+
+              <figure class="image-item">
+                <img src="assets/images1/huawei85_018_zoomgs.png" alt="输入图像">
+                <!-- <figcaption>ZoomFI‡</figcaption> -->
+              </figure>
+
+              <figure class="image-item">
+                <img src="assets/images1/huawei85_018_rife.png" alt="输出图像">
+                <!-- <figcaption>RIFE‡</figcaption> -->
+              </figure>
+
+              <figure class="image-item">
+                <img src="assets/images1/huawei85_018_amt.png" alt="输出图像">
+                <!-- <figcaption>AMT‡</figcaption> -->
+              </figure>
+
+              <figure class="image-item">
+                <img src="assets/images1/huawei85_018_mamba.png" alt="输出图像">
+                <!-- <figcaption>VFIMAMBA‡</figcaption> -->
+              </figure>
+
+              <figure class="image-item">
+                <img src="assets/images1/huawei85_018_UW.png" alt="输出图像">
+                <!-- <figcaption>UW</figcaption> -->
+              </figure>
+
+              <figure class="image-item">
+                <img src="assets/images1/huawei85_018_W.png" alt="输出图像">
+                <!-- <figcaption>W</figcaption> -->
+              </figure>
+
+            </div>
+
+            <div class="image-container">
+
+              <figure class="image-item">
+                <img src="assets/images1/huawei85_014_zoomgs.png" alt="输入图像">
+                <figcaption>ZoomFI‡</figcaption>
+              </figure>
+
+              <figure class="image-item">
+                <img src="assets/images1/huawei85_014_rife.png" alt="输出图像">
+                <figcaption>RIFE‡</figcaption>
+              </figure>
+
+              <figure class="image-item">
+                <img src="assets/images1/huawei85_014_amt.png" alt="输出图像">
+                <figcaption>AMT‡</figcaption>
+              </figure>
+
+              <figure class="image-item">
+                <img src="assets/images1/huawei85_014_mamba.png" alt="输出图像">
+                <figcaption>VFIMAMBA‡</figcaption>
+              </figure>
+
+              <figure class="image-item">
+                <img src="assets/images1/huawei85_014_UW.png" alt="输出图像">
+                <figcaption>UW</figcaption>
+              </figure>
+
+              <figure class="image-item">
+                <img src="assets/images1/huawei85_014_W.png" alt="输出图像">
+                <figcaption>W</figcaption>
+              </figure>
+
+            </div>
+
+            <!-- <div
               data-image-comparator="row"
               data-config='{
                 "images": [
@@ -755,9 +1208,9 @@
                 ],
                 "showHoverHint": false
               }'
-            ></div>
+            ></div> -->
 
-            <div
+            <!-- <div
               data-image-comparator="row"
               data-config='{
                 "images": [
@@ -770,9 +1223,9 @@
                 ],
                 "showHoverHint": false
               }'
-            ></div>
+            ></div> -->
 
-            <div
+            <!-- <div
               data-image-comparator="row"
               data-config='{
                 "images": [
@@ -785,7 +1238,7 @@
                 ],
                 "showHoverHint": false
               }'
-            ></div>
+            ></div> -->
 
           </div>
         </div>
