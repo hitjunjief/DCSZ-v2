@@ -162,30 +162,18 @@
                         text-align: justify;} 
                 </style>
                 <p>
-                    When zooming between dual cameras on smart-
-                    phones, prominent discontinuities in both geometric perspective
-                    and color rendition inevitably degrade the visual experience of
-                    users. To address this, we introduce the dual-camera smooth
-                    zoom (DCSZ) task, aiming to synthesize continuous intermediate
-                    frames for fluid zooming. However, directly applying existing
-                    video frame interpolation (VFI) models to this task is severely
-                    hindered by substantial domain gaps and the physical intractabil-
-                    ity of capturing real-world continuous ground truth. To this
-                    end, we propose a novel data synthesis framework to generate
-                    high-fidelity DCSZ training sequences, named ZoomGS v2. It
-                    explicitly decouples geometric trajectories and photometric trans-
-                    formations from 3D representation modeling, thereby enabling
-                    extensive data generation from easily accessible single-camera
-                    3D scenes. Furthermore, we design ZoomFI, a specialized VFI
-                    network tailored to the DCSZ task, which leverages comple-
-                    mentary bidirectional optical flows for comprehensive dual-
-                    camera information fusion. Extensive experiments on real-world
-                    datasets of two mobile phones demonstrate that training with our
-                    constructed DCSZ data significantly improves the performance
-                    of various VFI models. Moreover, the proposed ZoomFI achieves
-                    state-of-the-art results in both quantitative metrics and visual
-                    quality. The datasets, codes, and pre-trained models will be
-                    publicly available.
+                    When zooming between dual cameras on smartphones, prominent discontinuities in both geometric perspective and color 
+                    rendition inevitably degrade the visual experience of users. To address this, we introduce the dual-camera smooth 
+                    zoom (DCSZ) task, aiming to synthesize continuous intermediate frames for fluid zooming.  However, directly applying 
+                    existing video frame interpolation (VFI) models to this task is severely hindered by substantial domain gaps and the 
+                    physical intractability of capturing real-world continuous ground-truth. To this end, we propose a novel data synthesis 
+                    framework to generate high-fidelity DCSZ training sequences, named ZoomGS v2. It explicitly decouples geometric 
+                    trajectories and color transformations from 3D representation modeling, thereby enabling extensive data generation 
+                    from easily accessible single-camera 3D scenes. Furthermore, we design ZoomFI, a specialized VFI network tailored 
+                    to the DCSZ task, which leverages complementary bidirectional warping for comprehensive dual-camera information fusion. 
+                    Extensive experiments on test datasets of two mobile phones demonstrate that training with our constructed DCSZ data 
+                    significantly improves the performance of various VFI models. Moreover, the proposed ZoomFI achieves state-of-the-art 
+                    results in both quantitative metrics and visual quality.
                 </p>
               </div>
             </div>
